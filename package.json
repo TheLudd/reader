@@ -1,0 +1,19 @@
+{
+  "name": "@theludd/reader",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "transpile": "mkdir -p dist && babel lib -d dist"
+  },
+  "standard": {
+    "env": "mocha"
+  },
+  "dependencies": {}
+}
