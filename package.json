@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "prepublish": "yarn test && yarn transpile",
     "transpile": "mkdir -p dist && babel lib -d dist"
   },
   "standard": {
