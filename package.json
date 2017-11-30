@@ -1,6 +1,8 @@
 {
   "name": "@theludd/reader",
   "version": "1.0.1",
+  "main": "dist/reader",
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
@@ -16,5 +18,8 @@
   "standard": {
     "env": "mocha"
   },
-  "dependencies": {}
+  "files": [
+    "lib",
+    "dist"
+  ]
 }
