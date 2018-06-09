@@ -1,8 +1,8 @@
 import { assert } from 'chai'
-import { Reader, runReader, ask } from '../lib/reader'
-import ArgumentError from '../lib/argument-error'
 import { map, chain, ap, of } from '@theludd/fantasy-functions'
 import { pipe } from 'yafu'
+import { Reader, runReader, ask } from '../lib/reader'
+import ArgumentError from '../lib/argument-error'
 
 const { equal, throws } = assert
 
@@ -82,9 +82,7 @@ describe('reader', () => {
 
   describe('ask', () => {
     it('should work', () => {
-      const result = runReader(2, chain((n) => {
-        return map((env) => n + env, ask)
-      }, r1))
+      const result = runReader(2, chain((n) => map((env) => n + env, ask), r1))
       equal(result, 3)
     })
   })
@@ -108,7 +106,7 @@ describe('reader', () => {
       chain(chainInc),
       chain(addEnv),
       map(inc),
-      ap(incReader)
+      ap(incReader),
     ])
     const result = runReader(2, pipeLine(r1))
     equal(result, 10)
