@@ -7,14 +7,14 @@
     "fantasy-land": "^3.5.0"
   },
   "devDependencies": {
-    "@theludd/eslint-config-gaius": "^1.0.4",
+    "@theludd/eslint-config-gaius": "^1.0.6",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
-    "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
-    "eslint": "^4.19.1",
-    "mocha": "^4.0.1",
-    "yafu": "^0.1.8"
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.6.1",
+    "mocha": "^5.2.0",
+    "yafu": "^0.1.9"
   },
   "scripts": {
     "lint": "eslint lib test",

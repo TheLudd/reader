@@ -1,5 +1,7 @@
 import { assert } from 'chai'
-import { map, chain, ap, of } from '@theludd/fantasy-functions'
+import {
+  map, chain, ap, of,
+} from '@theludd/fantasy-functions'
 import { pipe } from 'yafu'
 import { Reader, runReader, ask } from '../lib/reader'
 import ArgumentError from '../lib/argument-error'
