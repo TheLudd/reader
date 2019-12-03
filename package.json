@@ -3,18 +3,18 @@
   "version": "2.0.2",
   "main": "dist/reader",
   "dependencies": {
-    "@theludd/fantasy-functions": "^1.0.1",
-    "fantasy-land": "^3.5.0"
+    "@theludd/fantasy-functions": "^1.1.1",
+    "fantasy-land": "^4.0.1"
   },
   "devDependencies": {
-    "@theludd/eslint-config-gaius": "^1.0.6",
+    "@theludd/eslint-config-gaius": "^2.0.8",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "eslint": "^5.6.1",
-    "mocha": "^5.2.0",
-    "yafu": "^0.1.9"
+    "eslint": "^6.7.2",
+    "mocha": "^6.2.2",
+    "yafu": "^0.1.11"
   },
   "scripts": {
     "lint": "eslint lib test",
