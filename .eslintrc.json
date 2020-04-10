@@ -1,3 +1,6 @@
 {
-  "extends": "@theludd/eslint-config-gaius"
+  "extends": "@theludd/eslint-config-gaius",
+  "rules": {
+    "max-classes-per-file": "off"
+  }
 }
