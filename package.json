@@ -1,6 +1,6 @@
 {
   "name": "@theludd/reader",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "dist/reader",
   "dependencies": {
     "@theludd/fantasy-functions": "^2.0.1",
