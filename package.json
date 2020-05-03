@@ -2,6 +2,7 @@
   "name": "@theludd/reader",
   "version": "2.1.1",
   "main": "dist/reader",
+  "license": "MIT",
   "dependencies": {
     "@theludd/fantasy-functions": "^2.0.2",
     "fantasy-land": "^4.0.1"
@@ -21,7 +22,7 @@
   "scripts": {
     "lint": "eslint lib test",
     "test": "yarn lint && yarn unit",
-    "prepublish": "yarn test && yarn transpile",
+    "prepublishOnly": "yarn test && yarn transpile",
     "transpile": "mkdir -p dist && babel lib -d dist",
     "unit": "mocha"
   },
