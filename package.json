@@ -3,6 +3,7 @@
   "version": "2.1.1",
   "main": "dist/reader",
   "license": "MIT",
+  "module": "./lib/reader.js",
   "dependencies": {
     "@theludd/fantasy-functions": "^2.0.2",
     "fantasy-land": "^4.0.1"
