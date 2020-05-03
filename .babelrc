@@ -1,8 +1,8 @@
 {
-  "presets": [ "env" ],
+  "presets": [ "@babel/preset-env" ],
   "plugins": [
     ["babel-plugin-transform-builtin-extend", {
-      globals: ["Error", "Array"]
+      globals: ["Array"]
     }]
   ]
 }
