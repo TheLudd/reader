@@ -1,6 +1,6 @@
 {
   "name": "@theludd/reader",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "dist/reader",
   "license": "MIT",
   "module": "./lib/reader.js",
