@@ -1,9 +1,20 @@
 {
   "name": "@theludd/reader",
   "version": "2.2.1",
-  "main": "dist/reader",
   "license": "MIT",
+  "main": "dist/reader",
   "module": "./lib/reader.js",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "yarn lint && yarn unit",
+    "prepublishOnly": "yarn test && yarn transpile",
+    "transpile": "mkdir -p dist && babel lib -d dist",
+    "unit": "mocha"
+  },
   "dependencies": {
     "@yafu/fantasy-functions": "^1.1.1",
     "fantasy-land": "^5.0.0"
@@ -21,18 +32,7 @@
     "mocha": "^9.0.2",
     "yafu": "^1.2.1"
   },
-  "scripts": {
-    "lint": "eslint lib test",
-    "test": "yarn lint && yarn unit",
-    "prepublishOnly": "yarn test && yarn transpile",
-    "transpile": "mkdir -p dist && babel lib -d dist",
-    "unit": "mocha"
-  },
   "standard": {
     "env": "mocha"
-  },
-  "files": [
-    "lib",
-    "dist"
-  ]
+  }
 }
