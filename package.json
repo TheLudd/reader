@@ -2,17 +2,19 @@
   "name": "@theludd/reader",
   "version": "2.2.1",
   "license": "MIT",
-  "main": "dist/reader",
-  "module": "./lib/reader.js",
-  "files": [
-    "lib",
-    "dist"
-  ],
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/reader.js",
+      "require": "./dist/reader.cjs"
+    }
+  },
+  "main": "./dist/reader.cjs",
   "scripts": {
     "lint": "eslint lib test",
     "test": "yarn lint && yarn unit",
     "prepublishOnly": "yarn test && yarn transpile",
-    "transpile": "mkdir -p dist && babel lib -d dist",
+    "transpile": "mkdir -p dist && babel lib/reader.js -o dist/reader.cjs",
     "unit": "mocha"
   },
   "dependencies": {
