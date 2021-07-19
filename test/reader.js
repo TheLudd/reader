@@ -1,9 +1,12 @@
 import { assert } from 'chai'
 import {
-  map, chain, ap, of,
-} from '@theludd/fantasy-functions'
+  ap,
+  chain,
+  map,
+  of,
+} from '@yafu/fantasy-functions'
 import { pipe } from 'yafu'
-import { Reader, runReader, ask } from '../lib/reader'
+import { Reader, ask, runReader } from '../lib/reader.js'
 
 const { equal } = assert
 
