@@ -10,6 +10,10 @@
     }
   },
   "main": "./dist/reader.cjs",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "clean": "rm -rf dist",
     "lint": "eslint lib test",
